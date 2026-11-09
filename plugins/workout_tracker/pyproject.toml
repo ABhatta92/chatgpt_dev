@@ -1,0 +1,17 @@
+[project]
+name = "workout-tracker"
+version = "0.1.0"
+description = "Personal workout tracking MCP server and ETL pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "google-api-python-client",
+    "google-cloud-bigquery",
+    "google-auth",
+    "google-auth-httplib2",
+    "mcp",
+    "pydantic",
+    "python-dotenv"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
